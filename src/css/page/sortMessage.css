@@ -1,0 +1,201 @@
+@import url("../lib/reset.css");
+.message-header {
+  width: 100%;
+  height: 4rem;
+  background-color: #f6f6f6;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+.message-header .message-header-return {
+  display: block;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-left: 2px solid #1e1e1e;
+  border-bottom: 2px solid #1e1e1e;
+  position: absolute;
+  left: 15px;
+  top: 15px;
+  transform: rotate(45deg);
+}
+.message-header .sort-message-title {
+  font-size: 16px;
+  color: #626b6a;
+  line-height: 4rem;
+}
+.message-header #js-message-header-change {
+  display: block;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+.message-header .message-header-change {
+  background: url(../../images/sort_11.png) no-repeat left top;
+  background-size: 20px auto;
+}
+.message-header .message-header-change1 {
+  background: url(../../images/sort_03.png) no-repeat left top;
+  background-size: 20px auto;
+}
+.sort-message-main {
+  width: 100%;
+  height: 100%;
+  background-color: #f2f3f5;
+  margin-top: 7.3rem;
+  z-index: 99998;
+}
+.sort-message-main .sort-message-main-nav {
+  width: 100%;
+  height: 3.3rem;
+  background: -webkit-linear-gradient(top, #f2f4f3, #e8e8e8);
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  right: 0;
+  z-index: 99999;
+}
+.sort-message-main .sort-message-main-nav .sort-message-main-nav-tab {
+  float: left;
+  width: 24.5%;
+  text-align: center;
+  line-height: 3.3rem;
+  border-top: 1px solid #c7c9c8;
+  border-bottom: 1px solid #c7c9c8;
+  border-left: 1px solid #f5f7f6;
+  border-right: 1px solid #d6d8d7;
+  color: #525661;
+  font-size: 16px;
+}
+.sort-message-main .sort-message-main-nav .sort-message-main-nav-active {
+  border-left: none;
+  box-shadow: 5px 5px 30px #b0b9b8 inset;
+}
+.sort-message-main .sort-message-main-nav .sort-message-main-nav-last {
+  border-right: none;
+}
+.sort-message-main .sort-message-main-wrap {
+  margin: 0 10px;
+  overflow: hidden;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list {
+  width: 100%;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-left {
+  float: left;
+  width: 50%;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-left .sort-message-main-wrap-list-left-pic {
+  display: block;
+  width: 97%;
+  margin-top: 10px;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-left .sort-message-main-wrap-list-left-pic .img {
+  width: 100%;
+  height: auto;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-left .sort-message-main-wrap-list-left-des {
+  line-height: 21px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #8e8f91;
+  text-align: center;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-left .sort-message-main-wrap-list-left-price {
+  color: #af1a1c;
+  display: block;
+  text-align: center;
+  line-height: 18px;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-right {
+  float: right;
+  width: 50%;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-right .sort-message-main-wrap-list-left-pic {
+  display: block;
+  margin-left: 2%;
+  width: 97%;
+  overflow: hidden;
+  margin-top: 10px;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-right .sort-message-main-wrap-list-left-pic .img {
+  width: 100%;
+  height: auto;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-right .sort-message-main-wrap-list-left-des {
+  line-height: 21px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  color: #8e8f91;
+  text-align: center;
+}
+.sort-message-main .sort-message-main-wrap .sort-message-main-wrap-list .sort-message-main-wrap-list-right .sort-message-main-wrap-list-left-price {
+  color: #af1a1c;
+  display: block;
+  text-align: center;
+  line-height: 18px;
+}
+.sort-message-main .vancl-sort-message-vertical {
+  display: none;
+}
+.sort-message-main .sort-message-vertical {
+  background-color: #fff;
+}
+.sort-message-main .sort-message-vertical .sort-message-vertical-wrap {
+  border-bottom: 2px solid #b2b4b3;
+  padding: 0 10px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  overflow: hidden;
+  position: relative;
+}
+.sort-message-main .sort-message-vertical .sort-message-vertical-wrap .sort-message-vertical-wrap-des {
+  float: left;
+  width: 6.2rem;
+  height: 6.5rem;
+  margin-right: 10px;
+}
+.sort-message-main .sort-message-vertical .sort-message-vertical-wrap .sort-message-vertical-wrap-des .img {
+  width: 6.2rem;
+  height: auto;
+}
+.sort-message-main .sort-message-vertical .sort-message-vertical-wrap .sort-message-vertical-wrap-center {
+  float: left;
+}
+.sort-message-main .sort-message-vertical .sort-message-vertical-wrap .sort-message-vertical-wrap-center .sort-message-vertical-wrap-center-des {
+  font-size: 14px;
+  color: #6f6f6f;
+  margin-top: 7px;
+}
+.sort-message-main .sort-message-vertical .sort-message-vertical-wrap .sort-message-vertical-wrap-center .sort-message-vertical-wrap-center-price {
+  color: #a51f1c;
+  font-size: 14px;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 3px;
+}
+.sort-message-main .sort-message-vertical .sort-message-vertical-wrap .sort-message-vertical-wrap-center .sort-message-vertical-wrap-center-color {
+  color: #a1a1a1;
+  font-size: 14px;
+}
+.sort-message-main .sort-message-vertical .sort-message-vertical-wrap .sort-message-vertical-wrap-return {
+  position: absolute;
+  right: 15px;
+  bottom: 3.6rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  display: block;
+  border-right: 1px solid #7d7d7d;
+  border-bottom: 1px solid #7d7d7d;
+  transform: rotate(-45deg);
+}
