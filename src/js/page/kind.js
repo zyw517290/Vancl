@@ -11,8 +11,7 @@ var sortPage = {
 //	tab切换
 	sortTab:function(){
 		$(".van-sort-content-picture-wrap .van-sort-content-picture-list").eq(0).show().siblings().hide();
-		$(".van-sort-content-picture-nav-top").on("click",function(){
-			
+		$(".van-sort-content-picture-nav-top").on("click",function(){			
 			$(this).addClass("van-sort-content-picture-nav-active").show().siblings().removeClass("van-sort-content-picture-nav-active");
 			$(".van-sort-content-picture-wrap .van-sort-content-picture-list").eq($(this).index()).show().siblings().hide();
 		})
@@ -50,13 +49,17 @@ var sortPage = {
 		})		
 	},
 //	点击头部图片时变换详细信息格式
-	listChange:function(){
-		$("#js-message-header-change").on("click",function(){
-			$('.js-vancl-sort-message-vertical').show();
-		});
-		$("#js-message-header-change").on("click",function(){
-			$('.vancl-sort-message-main-wrap').hide();
-		})
+	listChange:function(){	
+		 open=true;
+		$("#js-message-header-change").on("click",function(){			
+			if(open==true){
+				$('.js-vancl-sort-message-vertical').show().siblings('.vancl-sort-message-main-wrap').hide();
+				open=false;
+			}else{
+				$('.vancl-sort-message-main-wrap').show().siblings('.js-vancl-sort-message-vertical').hide();
+				open=true;
+			}
+		})	
 	}
 }
 sortPage.sortInit();    
